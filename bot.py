@@ -244,7 +244,7 @@ logger = logging.getLogger("ReportBot")
 # Configuration
 API_ID = "29657994"
 API_HASH = "85f461c4f637911d79c65da1fc2bdd77"
-BOT_TOKEN = "7815713111:AAFB_ehbsyrYZISZmKPfn7KT2vV9seHrfEU"
+BOT_TOKEN = "7724983264:AAFifjJ2ZUVoyDjqGgl0PPfyqPpb7PqXJNg"
 
 NOREPORT_CHATS = [
     "@Mod_By_Kamal",
