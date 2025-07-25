@@ -1,0 +1,14 @@
+# Block some common bots
+SetEnvIfNoCase User-Agent ".*bot.*" bad_bot
+SetEnvIfNoCase User-Agent ".*crawler.*" bad_bot
+SetEnvIfNoCase User-Agent ".*spider.*" bad_bot
+Order Allow,Deny
+Allow from all
+Deny from env=bad_bot
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
